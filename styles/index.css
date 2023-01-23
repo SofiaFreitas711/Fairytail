@@ -1,0 +1,660 @@
+@font-face {
+    font-family: 'gilroyheavy';
+    src: url('fonts/gilroy-heavy-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroyregular';
+    src: url('fonts/gilroy-regular-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroysemibold';
+    src: url('fonts/gilroy-semibold-webfont.woff2') format('woff2'),
+         url('fonts/gilroy-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+nav{
+    display: flex;
+    font-family: 'gilroysemibold', sans-serif;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 1%;
+    align-items: center;
+    height: 15vh;
+}
+
+ul{
+    padding-left:0%;
+    padding-top: 1%;
+    list-style: none;
+}
+
+a{
+    font-size: 130%;
+    text-decoration: none;
+    color: #051626;
+}
+
+.dropdown{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li.dropdown ul{
+    display:none;
+    position: absolute;
+    margin-right:13px;
+}
+
+nav ul li.dropdown ul li{
+    margin-top: 23px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav ul li.dropdown ul li a{
+    font-size: 20px;
+}
+
+nav ul li.dropdown:hover ul{
+    display: flex;
+    cursor: pointer;
+}
+
+.rucs{
+    color: #2ec4b6;
+}
+
+.lucks{
+    color: #e71d36;
+}
+
+.mis{
+    color: #f0dc03;
+}
+
+#center-ul{
+    align-self: center;
+    padding-top:1%;
+}
+
+#right-ul{
+    display: flex;
+    width: 17vw;
+    padding-right: 0%;
+}
+
+
+#logo{
+    width: 150px;
+    height: auto;
+    padding-top: 1%;
+}
+
+#login-item{
+    display:block;
+    text-align: center;
+    padding-top:0%;
+    padding-right: 30px;
+}
+
+#cart{
+    width: 35px;
+    height: auto;
+    padding-left: 60%;
+    padding-top: 4%;
+}
+#comprar-counter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 23px;
+    background-color: #ff9f1c;
+}
+
+#comprar-counter{
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.parte{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow:1;
+    position: relative;
+    height: 85vh;
+    padding-left: 5%;
+    padding-right:5%;
+}
+
+#parte1{
+    height: 86vh;
+}
+
+#parte2{
+    height: 90vh;
+}
+
+
+#texto-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#texto-container2{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+
+#texto-container3{
+    display: flex;
+    flex-direction: column;
+}
+
+#cao{
+    width: 40%;
+    height: auto;
+    align-self: center;
+    position: absolute;
+    bottom:0;
+    right: 4%;
+    user-select: none;
+}
+
+#emptyDiv{
+    width: 50%;
+}
+
+#cao2{
+    width: 49%;
+    height: auto;
+    align-self: center;
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    user-select: none;
+}
+
+#cao3{
+    width: 42%;
+    height: auto;
+    align-self: center;
+    position: absolute;
+    bottom:0;
+    right: 2%;
+    user-select: none;  
+}
+
+#novidade{
+    font-family: "gilroyextrabold",sans-serif;
+    font-size: 30px;
+    color: orange;
+    margin: 0;
+    padding-left: 1%;
+    user-select: none;
+}
+
+#nome1,#nome2,#nome3{
+    font-family: "gilroyheavy",sans-serif;
+    margin: 0;
+}
+
+#parte2{
+    background-color: #051626;
+}
+
+#parte2 #texto-container2 p{
+    color: white;
+}
+
+#nome2{
+    text-align: right;
+}
+
+
+#rucs{
+    font-size: 275px;
+    line-height: 70%;
+    user-select: none;
+}
+
+#bolas,#coleiras{
+    font-size: 217px;
+    line-height: 85%;
+    color: #051626;
+    user-select: none;
+}
+
+#trelas{
+    font-size: 217px;
+    line-height: 85%;
+    color: white;
+    user-select: none;
+}
+
+#mis{
+    font-size: 275px;
+    line-height: 70%;
+    user-select: none;
+}
+
+#lucks{
+    font-size: 275px;
+    line-height: 70%;
+    user-select: none;
+    color: #e71d36;
+}
+
+.vantagens{
+    font-family: "gilroyextrabold",sans-serif;
+    margin:0;
+    font-size: 20px;
+    padding-top: 3%;
+    padding-left: 2%;
+    user-select: none;
+}
+
+#comprar1 {
+    background-size: 220%;
+    color:#2ec4b6;
+    background-color: transparent;
+    background-position: 100%;
+    border: 3px solid#2ec4b6;
+    transition: all .2s ease-out;
+    font-family:"gilroysemibold",sans-serif;
+    outline: none;
+    cursor: pointer;
+    line-height: 2.5em;
+    font-size: 1.4vw;
+    width: 16vw;
+    border-radius: 17px 17px 17px 3px;
+    background-image: linear-gradient(110deg, #2ec4b6 0%, #2ec4b6 50%, transparent 50%, transparent 100%);
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+
+#comprar2 {
+    background-size: 220%;
+    color:#f0dc03;
+    background-color: transparent;
+    background-position: 100%;
+    border: 3px solid#f0dc03;
+    transition: all .2s ease-out;
+    font-family:"gilroysemibold",sans-serif;
+    outline: none;
+    cursor: pointer;
+    line-height: 2.5em;
+    font-size: 1.4vw;
+    width: 16vw;
+    border-radius: 17px 17px 17px 3px;
+    background-image: linear-gradient(110deg, #f0dc03 0%, #f0dc03 50%, transparent 50%, transparent 100%);
+    margin-left: 2%;
+    margin-top: 10%;
+    position: relative;
+    z-index:1;
+}
+
+#comprar3 {
+    background-size: 220%;
+    color:#e71d36;
+    background-color: transparent;
+    background-position: 100%;
+    border: 3px solid#e71d36;
+    transition: all .2s ease-out;
+    font-family:"gilroysemibold",sans-serif;
+    outline: none;
+    cursor: pointer;
+    line-height: 2.5em;
+    font-size: 1.4vw;
+    width: 16vw;
+    border-radius: 17px 17px 17px 3px;
+    background-image: linear-gradient(110deg, #e71d36 0%, #e71d36 50%, transparent 50%, transparent 100%);
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#comprar2:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, 0.25);
+    background-position: 0;
+    color: #000;
+}
+
+#comprar2:active{
+    transform: translateY(-1px);
+}
+
+#comprar1:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, 0.25);
+    background-position: 0;
+    color: #fff;
+}
+
+#comprar1:active{
+    transform: translateY(-1px);
+}
+
+#comprar3:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, 0.25);
+    background-position: 0;
+    color: #fff;
+}
+
+#comprar3:active{
+    transform: translateY(-1px);
+}
+
+footer{
+    height: 190px;
+    padding-left: 100px;
+    padding-top: 10px;
+    background-color: #051626;
+    color: white;
+    font-family: "gilroyregular",sans-serif;
+}
+
+#footerContainer{
+    display: grid;
+    grid-template-columns: 190px 190px 220px 220px;
+    grid-template-rows: 40px 25px 25px;
+    padding-top: 25px;
+}
+
+#localizacaoHeader{
+    font-family: "gilroyextrabold",sans-serif;
+    grid-row:1/2;
+    grid-column: 3/4;
+    font-size: 21px;
+}
+
+#opiniaoHeader{
+    font-family: "gilroyextrabold",sans-serif;
+    font-size: 21px;
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+#contactosHeader{
+    font-family: "gilroyextrabold",sans-serif;
+    font-size: 21px;
+}
+
+#linkOpiniao{
+    color: white;
+    font-family: "gilroysemibold";
+}
+
+#footerContainer p:nth-child(10){
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+#footerContainer p:nth-child(11){
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+#footerContainer p:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#footerContainer p:nth-child(3){
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#footerContainer p:nth-child(7){
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+#footerContainer p:nth-child(8){
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+#footerContainer p:nth-child(5){
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#footerContainer p:nth-child(4){
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+@media screen and (max-width:1100px){
+    nav{
+        padding-top: 2%;
+    }
+    #coleiras{
+        font-size: 190px;
+    }
+    #rucs{
+        font-size: 240px;
+    }
+    #trelas{
+        font-size: 190px;
+    }
+    #mis{
+        font-size: 240px;
+    }
+    #vantagens{
+        font-size:17px;
+    }
+}
+
+@media screen and (max-width:970px){
+    nav{
+        padding-top: 4%;
+    }
+    #coleiras{
+        font-size: 160px;
+    }
+    #rucs{
+        font-size: 202px;
+    }
+    #trelas{
+        font-size: 160px;
+    }
+    #mis{
+        font-size: 202px;
+    }
+    #vantagens{
+        font-size:14px;
+    }
+    #cao{
+        width: 45%;
+    }
+    #cao2{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:800px){
+    nav{
+        padding-top: 4%;
+    }
+    #novidade{
+        font-size: 20px;
+    }
+    #coleiras{
+        font-size: 130px;
+    }
+    #rucs{
+        font-size: 166px;
+    }
+    #trelas{
+        font-size: 130px;
+    }
+    #mis{
+        font-size: 166px;
+    }
+    #vantagens{
+        font-size:11px;
+    }
+    #cao{
+        width: 55%;
+        left: 50%;
+    }
+    #cao2{
+        width: 55%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width:645px){
+    nav{
+        padding-top: 4%;
+    }
+    #novidade{
+        font-size: 15px;
+    }
+    #coleiras{
+        font-size: 100px;
+    }
+    #rucs{
+        font-size: 128px;
+    }
+    #trelas{
+        font-size: 100px;
+    }
+    #mis{
+        font-size: 128px;
+    }
+    #vantagens{
+        font-size:10px;
+    }
+    #cao{
+        width: 65%;
+        left: 40%;
+    }
+    #cao2{
+        width: 65%;
+        left: 40%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    nav{
+        padding-top: 4%;
+        flex-direction: column;
+    }
+    #logo{
+        width: 60px;
+        padding-right: 15px;
+    }
+    #novidade{
+        font-size: 15px;
+    }
+    #coleiras{
+        font-size: 75px;
+    }
+    #rucs{
+        font-size: 96px;
+    }
+    #trelas{
+        font-size: 75px;
+    }
+    #mis{
+        font-size: 96px;
+    }
+    #vantagens{
+        font-size:10px;
+    }
+    #cao{
+        width: 75%;
+        left: 10%;
+    }
+    #cao2{
+        width: 75%;
+        left: 10%;
+    }
+    .angled-gradient-button{
+        border: 2px solid#2ec4b6;
+        font-size:12px;
+        width: 140px;
+    }
+    .parte{
+        flex-direction: column;
+    }
+    #texto-container{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:320px){
+    nav{
+        padding-top: 4%;
+    }
+    #novidade{
+        font-size: 10px;
+    }
+    #coleiras{
+        font-size: 53px;
+    }
+    #rucs{
+        font-size: 67px;
+    }
+    #trelas{
+        font-size: 53px;
+    }
+    #mis{
+        font-size: 67px;
+    }
+    #vantagens{
+        font-size:10px;
+    }
+    #cao{
+        width: 75%;
+        right: 40px;
+    }
+    #cao2{
+        width: 75%;
+        right: 40px;
+    }
+    .angled-gradient-button{
+        font-size:9px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT - Página Inicial</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logopage.v1.cropped.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="logo" id="logo">
+            <ul id="center-ul">
+                <li class="dropdown">
+                    <a href=#>Produtos</a>
+                    <ul>
+                        <li><a href="coleira.html">Coleira <span class="rucs">Rucs</span></a></li>
+                        <li><a href="trela.html">Trela <span class="mis">Mis</span></a></li>
+                        <li><a href="bola.html">Bola <span class="lucks">Lucks</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="right-ul">
+                <li><a href="login.html" class="right-item" id="login-item">Iniciar<br>Sessão</a></li>
+                <li><a href="cart.html" class="right-item"><img src="img/shopping-cart.svg" alt="cart" id="cart"></a>
+                </li>
+                <div id="comprar-counter-container">
+                    <p id="comprar-counter">0</p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="parte1" class="parte">
+            <div id="texto-container">
+                <p class="texto" id="novidade">NOVIDADE</p>
+                <h1 class="texto" id="nome1"><span id="coleiras">COLEIRAS</span><br><span id="rucs"
+                        class="rucs">RUCS</span></h1>
+                <p class="texto vantagens">FABRICADAS EM PORTUGAL . FEITAS À MÃO . 100% RECICLÁVEIS .</p>
+                <a href="coleira.html"><button class='angled-gradient-button' id="comprar1" value="info">Mais
+                        Informações</button></a>
+            </div>
+            <img src="img/coleirainvis.png" alt="cao" id="cao">
+        </div>
+        <div id="parte2" class="parte">
+            <img src="img/trelainvis.png" alt="cao" id="cao2">
+            <div id="emptyDiv"></div>
+            <div id="texto-container2">
+                <h1 class="texto" id="nome2"><span id="trelas">TRELAS</span><br><span id="mis" class="mis">MIS</span>
+                </h1>
+                <p class="texto vantagens" id="vantagens2">FABRICADAS EM PORTUGAL . FEITAS À MÃO . 100% RECICLÁVEIS .
+                </p>
+                <a href="trela.html">
+                    <button class='angled-gradient-button' id="comprar2" value="info">Mais
+                        Informações</button>
+                </a>
+            </div>
+        </div>
+        <div id="parte3" class="parte">
+            <div id="texto-container3">
+                <h1 class="texto" id="nome3"><span id="bolas">BOLAS</span><br><span id="lucks"
+                        class="invis">LUCKS</span></h1>
+                <p class="texto vantagens">FABRICADAS EM PORTUGAL . FEITAS À MÃO . 100% RECICLÁVEIS .
+                </p>
+                <a href="bola.html"><button class='angled-gradient-button' id="comprar3" value="info">Mais
+                        Informações</button></a>
+            </div>
+            <img src="img/bolainvis.png" alt="cao" id="cao3">
+        </div>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <h3 id="contactosHeader">CONTACTOS</h3>
+            <p>ajuda@fairytail.com</p>
+            <p>256 987 124</p>
+            <p>Segunda a Sexta</p>
+            <p>08h - 20h</p>
+            <h3 id="localizacaoHeader">LOCALIZAÇÃO</h3>
+            <p>Rua Pedro Nunes, nº33</p>
+            <p>Vila do Conde</p>
+            <h3 id="opiniaoHeader">OPINIÃO</h3>
+            <p><a id="linkOpiniao" href="opiniao.html">Clique aqui</a> para nos </p>
+            <p>contar como se sente</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
