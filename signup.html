@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FairyTail - Criar Conta</title>
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logopage.v1.cropped.png" />
+    <script src="https://kit.fontawesome.com/818e737876.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="logo-container">
+
+        </div>
+        <p id="login-text">CRIAR CONTA</p>
+        <form class="login-form">
+            <input type="text" class="input" placeholder="Nome Completo" required>
+            <label id="lbl-nome" class="label">Nome Completo</label><br>
+            <input type="email" class="input" placeholder="E-mail" required>
+            <label id="lbl-email" class="label">E-mail</label><br>
+            <div class="pw-container">
+                <input type="password" class="input" placeholder="Palavra-Passe" id="password" required>
+                <label id="lbl-pw" class="label">Palavra-Passe</label>
+                <span>
+                    <i class="fas fa-eye fa-lg" id="eye" onclick="toggle()"></i>
+                </span><br>
+            </div>
+            <div class="pw-container">
+                <input type="password" class="input" placeholder="Confirme a Palavra-Passe" id="cpassword" required>
+                <label id="lbl-cpw" class="label">Confirme a Palavra-Passe</label><br>
+                <span>
+                    <i class="fas fa-eye fa-lg" id="eye2" onclick="toggle2()"></i>
+                </span><br>
+            </div>
+        </form>
+        <div class="links">
+            <a href="login.html">Já tem conta? Inicie sessão!</a>
+        </div>
+        <button class='angled-gradient-button' type="submit">Criar Conta</button>
+    </div>
+    <script>
+        var state1 = false;
+        var state2 = false;
+        function toggle() {
+            if (state1) {
+                document.getElementById("password").setAttribute("type", "password");
+                state1 = false;
+            }
+            else {
+                document.getElementById("password").setAttribute("type", "text");
+                state1 = true;
+            }
+        }
+        function toggle2() {
+            if (state2) {
+                document.getElementById("cpassword").setAttribute("type", "password");
+                state2 = false;
+            }
+            else {
+                document.getElementById("cpassword").setAttribute("type", "text");
+                state2 = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

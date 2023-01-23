@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT - Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logopage.v1.cropped.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+            <ul id="center-ul">
+                <li class="dropdown">
+                    <a href=#>Produtos</a>
+                    <ul id="produtosNav">
+                        <li><a href="coleira.html">Coleira <span class="rucs">Rucs</span></a></li>
+                        <li><a href="trela.html">Trela <span class="mis">Mis</span></a></li>
+                        <li><a href="bola.html">Bola <span class="lucks">Lucks</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="right-ul">
+                <li><a href="login.html" class="right-item" id="login-item">Iniciar<br>Sessão</a></li>
+                <li><a href=# class="right-item"><img src="img/shopping-cart.svg" alt="cart" id="cart"></a></li>
+                <div id="comprar-counter-container">
+                    <p id="comprar-counter">0</p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <p>CARRINHO DE COMPRAS</p>
+            <div id="container2">
+                <div id="containerEsquerda">
+                    <div id="headers">
+                        <p id="head1">PRODUTO</p>
+                        <p id="head2">QUANTIDADE</p>
+                        <p id="head3">PREÇO</p>
+                    </div>
+                    <div id="produtos">
+                        <p id="carrinhoVazio">O seu carrinho está vazio!</p>
+                    </div>
+                </div>
+                <div id="containerDireita">
+                    <p id="pagar">A PAGAR</p>
+                    <div id="preco">
+                        <div class="subpreco sp1">
+                            <p>TOTAL DE PRODUTO</p>
+                            <p>IVA</p>
+                            <p>PORTES</p>
+                            <p id="total">TOTAL</p>
+                            <p id="precoProduto">0,00€</p>
+                            <p id="precoIVA">0,00€</p>
+                            <p>GRATUITOS</p>
+                            <p id="precoTotal">0,00€</p>
+                        </div>
+                    </div>
+                    <button id="btnContinuar">
+                        <p id="continuar">CONTINUAR</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <h3 id="contactosHeader">CONTACTOS</h3>
+            <p>ajuda@fairytail.com</p>
+            <p>256 987 124</p>
+            <p>Segunda a Sexta</p>
+            <p>08h - 20h</p>
+            <h3 id="localizacaoHeader">LOCALIZAÇÃO</h3>
+            <p>Rua Pedro Nunes, nº33</p>
+            <p>Vila do Conde</p>
+            <h3 id="opiniaoHeader">OPINIÃO</h3>
+            <p><a id="linkOpiniao" href="opiniao.html">Clique aqui</a> para nos contar</p>
+            <p>como se sente</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
